@@ -7,15 +7,48 @@ body
 {
     z-index: -1;
 
-    width: 800px;
+    width: 600px;
     height: 700px;
     
     margin-left: auto;
     margin-right: auto;
     
-    border-radius: 20%;
-    background: rgb(46,139,87);
+    border-radius: 10%;
+    background: #3F9865;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.panel>img
+{
+    padding-top: 20px;
+}
+
+menu
+{
+    list-style-type: none;
+    padding-left: 0;    
+    margin-left: 0;
+}
+
+.menu a
+{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(46,139,87);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(230, 250, 249);
+    border-bottom: 5px solid rgb(46,139,87);
+}
+
+.menu li
+{
+    display: inline;
+}
+
 
 h1
 {
@@ -32,6 +65,39 @@ img
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15%;
+}
+
+button
+{
+
+    appearance: none;
+    background-color: #878E99;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 20px 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Center
@@ -41,22 +107,16 @@ img
     margin-right: auto;  
 }
 
-#sign_in
-{
-    width: 100px;
-    height: 30px;
-
-    font-family: 'Open Sans', sans-serif;
-
-    font-size: 1rem;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    top: 40px;
-}
-
 #rounding
 {
     border-radius: 20%;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*justify-content: space-between;*/
+    align-items: center;
 }
