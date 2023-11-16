@@ -1,12 +1,21 @@
-#div
+body
 {
-    width: 100px;
-    height: 30px;
-    
-    border-radius: 50%;
-    background-color: lightgreen;
+    background: white;
 }
 
+.panel
+{
+    z-index: -1;
+
+    width: 800px;
+    height: 700px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 20%;
+    background: rgb(46,139,87);
+}
 
 h1
 {
@@ -43,5 +52,11 @@ img
 
     margin-left: auto;
     margin-right: auto;
+
+    top: 40px;
 }
 
+#rounding
+{
+    border-radius: 20%;
+}
