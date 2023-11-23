@@ -110,10 +110,10 @@ body
     margin-left: auto;
     margin-right: auto;
     
-    border-radius: 7em;
+    border-radius: 6em;
     background: rgba(133, 255, 102, 0.3);
     backdrop-filter: blur(20px);
-    border: 7px solid rgba(227, 255, 116, 1);
+    border: 5px solid rgba(227, 255, 116, 1);
 
     display: flex;
     flex-direction: column;
@@ -137,6 +137,9 @@ menu
     list-style-type: none;
     padding-left: 0;    
     margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .menu a
@@ -147,18 +150,20 @@ menu
     font-family: Morpha;
     font-size: 2.5rem;
     color:rgb(0, 0, 0);
-    display: inline-block;
     padding: 10px 20px;
     background-color: rgba(164, 255, 149, 1);
     border-bottom: 3px solid rgb(118, 210, 104);
     border-radius: 20em;
-
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .menu li
 {
-    display: inline;
+    display: flex;
 }
 
 #logo
@@ -168,7 +173,7 @@ menu
     justify-content: center;
     align-items: center;
 
-    font-size: 5rem;
+    font-size: 6.5rem;
     font-family: 'Morpha', sans-serif;
 
 }
@@ -208,7 +213,8 @@ button
     margin-bottom: 2rem;
     appearance: none;
     background-color: rgba(164, 255, 149, 1);
-    border: 1px solid rgba(27, 31, 35, .15);
+    border: 0px solid rgba(164, 255, 149, 1);
+    border-bottom: 4px solid rgb(118, 210, 104);
     border-radius: 20em;
     box-sizing: border-box;
     color: #000000;
@@ -240,7 +246,8 @@ button
     height: 50px;
     font-size: 1.1rem;
 }
-  .text-field__input {
+
+.text-field__input {
     margin-bottom: 2rem;
     display: block;
     width: 500px;
@@ -253,7 +260,7 @@ button
     color: #212529;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #bdbdbd;
+    border: 0px solid #ffffff;
     border-radius: 20em;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
@@ -267,4 +274,19 @@ button
 #rounding
 {
     border-radius: 20em;
+}
+
+.header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3rem;
+
+    border-radius: 7em;
+    background: rgba(133, 255, 102, 0.3);
+    border-bottom: 3px solid rgb(118, 210, 104);
+    backdrop-filter: blur(20px);
 }
